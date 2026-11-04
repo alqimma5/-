@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مؤسسة القمة لتنظيف وصيانة الأفران بالرياض</title>
+
+    <meta name="description" content="مؤسسة القمة المتخصصة في تنظيف وصيانة الأفران بالرياض. استفد من خصم 30% واحجز خدمتك الآن عبر واتساب أو الاتصال المباشر.">
+
+    <meta name="theme-color" content="#10251e">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #f7f8f5;
+            color: #17271f;
+            line-height: 1.8;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(12,35,27,.96),
+                    rgba(20,58,43,.90)
+                ),
+                url('https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=85');
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 35px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+
+        .logo span {
+            color: #e7bd65;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e7bd65;
+            color: #17271f;
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: 800;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: clamp(30px, 6vw, 52px);
+            font-weight: 900;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #e7bd65;
+        }
+
+        .description {
+            color: #e4ebe5;
+            font-size: 18px;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .offer {
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(231,189,101,.5);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0 auto 30px;
+            max-width: 420px;
+        }
+
+        .offer small {
+            color: #fff;
+            font-size: 17px;
+        }
+
+        .offer strong {
+            display: block;
+            color: #e7bd65;
+            font-size: 58px;
+            font-weight: 900;
+            line-height: 1.4;
+        }
+
+        .offer p {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .feature {
+            background: rgba(255,255,255,.1);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            text-decoration: none;
+            padding: 15px 28px;
+            border-radius: 12px;
+
+            font-size: 18px;
+            font-weight: 800;
+            min-width: 220px;
+
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+        }
+
+        .whatsapp {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .call {
+            background: #e7bd65;
+            color: #17271f;
+        }
+
+        .section {
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            color: #18382a;
+        }
+
+        .section > p {
+            max-width: 700px;
+            margin: auto;
+            color: #59665d;
+            font-size: 17px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+
+            gap: 20px;
+            max-width: 1000px;
+            margin: 35px auto 0;
+        }
+
+        .service {
+            background: #fff;
+            padding: 25px 20px;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0,0,0,.05);
+        }
+
+        .service .icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .service h3 {
+            color: #18382a;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .service p {
+            font-size: 15px;
+            color: #59665d;
+        }
+
+        .cta {
+            background: #18382a;
+            color: #fff;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #dce7df;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            background: #10251e;
+            color: #b9c8be;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 30px 16px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .offer strong {
+                font-size: 48px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .section h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- القسم الرئيسي -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="logo">
+                مؤسسة <span>القمة</span>
+            </div>
+
+            <div class="badge">
+                عرض خاص لفترة محدودة
+            </div>
+
+            <h1>
+                تنظيف وصيانة الأفران بالرياض
+                <br>
+                مع <span>مؤسسة القمة</span>
+            </h1>
+
+            <p class="description">
+                هل تعاني من تراكم الدهون أو ضعف أداء الفرن؟
+                مع مؤسسة القمة نوفر لك خدمات تنظيف وصيانة الأفران
+                بالرياض، مع اهتمام بالتفاصيل وجودة الخدمة.
+            </p>
+
+            <div class="offer">
+
+                <small>استفد من عرضنا المميز</small>
+
+                <strong>خصم 30%</strong>
+
+                <p>
+                    على خدمات تنظيف وصيانة الأفران
+                </p>
+
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    ✓ تنظيف احترافي
+                </div>
+
+                <div class="feature">
+                    ✓ صيانة الأفران
+                </div>
+
+                <div class="feature">
+                    ✓ خدمة داخل الرياض
+                </div>
+
+            </div>
+
+            <!-- الأزرار الرئيسية -->
+
+            <div class="buttons">
+
+                <a
+                    class="btn whatsapp"
+                    href="https://wa.me/966545810938?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D9%88%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D8%A7%D9%84%D8%A3%D9%81%D8%B1%D8%A7%D9%86%20%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%8C%20%D8%B4%D9%81%D8%AA%20%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AE%D8%B5%D9%85%2030%25%20%D9%88%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A3%D9%88%20%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D9%84%D9%84%D9%81%D8%B1%D9%86%20%D8%B9%D9%86%D8%AF%D9%8A.%20%D9%8A%D8%A7%20%D8%B1%D9%8A%D8%AA%20%D8%AA%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D9%88%D9%86%20%D9%85%D8%B9%D8%A7%D9%8A%20%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D9%88%D8%B9%D8%AF%20%D9%88%D8%A7%D9%84%D8%B3%D8%B9%D8%B1."
+                    target="_blank"
+                    rel="noopener"
+                >
+                    💬 اطلب الخدمة الآن
+                </a>
+
+                <a
+                    class="btn call"
+                    href="tel:0545810938"
+                >
+                    📞 اتصل الآن
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- قسم الخدمات -->
+
+    <section class="section">
+
+        <h2>
+            خدمات مؤسسة القمة
+        </h2>
+
+        <p>
+            نوفر لك خدمات تنظيف وصيانة الأفران بالرياض
+            لمساعدتك في الحفاظ على كفاءة الفرن
+            والحصول على تجربة استخدام أفضل.
+        </p>
+
+        <div class="services">
+
+            <div class="service">
+
+                <div class="icon">🔥</div>
+
+                <h3>
+                    تنظيف الأفران
+                </h3>
+
+                <p>
+                    تنظيف الأفران وإزالة الدهون
+                    وبقايا الطعام المتراكمة.
+                </p>
+
+            </div>
+
+            <div class="service">
+
+                <div class="icon">🛠️</div>
+
+                <h3>
+                    صيانة الأفران
+                </h3>
+
+                <p>
+                    فحص الأعطال والعمل على
+                    إعادة الفرن إلى كفاءته.
+                </p>
+
+            </div>
+
+            <div class="service">
+
+                <div class="icon">✨</div>
+
+                <h3>
+                    العناية بالفرن
+                </h3>
+
+                <p>
+                    الاهتمام بنظافة الفرن
+                    ومساعدتك على الحفاظ عليه.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- قسم التواصل -->
+
+    <section class="cta">
+
+        <h2>
+            لا تفوّت خصم 30%
+        </h2>
+
+        <p>
+            تواصل مع مؤسسة القمة واحجز خدمة تنظيف
+            أو صيانة الفرن داخل الرياض.
+        </p>
+
+        <div class="buttons">
+
+            <a
+                class="btn whatsapp"
+                href="https://wa.me/966545810938?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D9%85%D8%B9%20%D8%AE%D8%B5%D9%85%2030%25.%20%D9%8A%D8%B1%D8%AC%D9%89%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%8A%20%D9%84%D8%AD%D8%AC%D8%B2%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9."
+                target="_blank"
+                rel="noopener"
+            >
+                💬 تواصل واتساب
+            </a>
+
+            <a
+                class="btn call"
+                href="tel:0545810938"
+            >
+                📞 0545810938
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- نهاية الصفحة -->
+
+    <footer>
+
+        <p>
+            مؤسسة القمة لتنظيف وصيانة الأفران بالرياض
+        </p>
+
+        <p>
+            جميع الحقوق محفوظة © 2026
+        </p>
+
+    </footer>
+
+</body>
+</html>
